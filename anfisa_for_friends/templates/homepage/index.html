@@ -4,4 +4,9 @@
 {% endblock %}
 {% block content %}
   <h1 class="pb-2 mb-0">Главная страница</h1>
+  {% for ice in ice_cream_list %}
+    {{ ice.id }}
+    {{ ice.title }}
+    <br>
+  {% endfor %}
 {% endblock %}
